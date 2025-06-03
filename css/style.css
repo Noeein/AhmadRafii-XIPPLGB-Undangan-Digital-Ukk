@@ -375,6 +375,7 @@ header p {
   opacity: 0;
   width: 90%;
   max-width: 400px;
+  z-index:5;
 }
 
 .rsvp-form input,
