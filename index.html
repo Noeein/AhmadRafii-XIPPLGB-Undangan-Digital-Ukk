@@ -127,7 +127,7 @@
             <div class="rsvp-form" >
                 <h1>RSVP</h1>
                     <p>Mohon konfirmasi kehadiran Anda sebelum 07 Juni 2025</p>
-                        <form action="#" method="post" id="rsvpForm">
+                        <form action="php/submit.php" method="post" id="rsvpForm">
                             <label for="name">Nama:</label>
                             <input type="text" id="name" name="name" required> <br>
                             <select name="amount" id="amount">
@@ -146,11 +146,18 @@
             <img src="assets/animation-asset/flower-3nd.png" alt="" class="asset-bottom" style="height: 40%; width:30%; right: 0; z-index: 4;">
             <img src="assets/animation-asset/flower-2nd.png" alt="" class="asset-bottom">
         </div>
+        <div class="container-audio" id="container-audio">
         <!--Music-->
-        <audio id="WeddingSong" loop>
-        <source src="assets/audio/wwd.mp3juice.blog - Long Afternoon-Painted Silence (official music video) (320 KBps).mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
+           <div class="audio-player">
+            <audio id="Audio" src="assets/audio/wwd.mp3juice.blog - Long Afternoon-Painted Silence (official music video) (320 KBps).mp3" autoplay loop></audio>
+              <button id="TombolAudio" style=" background: none; border: none; cursor: pointer; border-radius: 50%; box-shadow: 0 0 10px rgba(0,0,0,0.2); position: fixed; bottom: 20px; left: 20px; z-index: 1000;">
+                <svg width="34" height="32" viewBox="0 0 34 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17 32C21.5087 32 25.8327 30.3143 29.0208 27.3137C32.2089 24.3131 34 20.2435 34 16C34 11.7565 32.2089 7.68687 29.0208 4.68629C25.8327 1.68571 21.5087 0 17 0C12.4913 0 8.1673 1.68571 4.97919 4.68629C1.79107 7.68687 0 11.7565 0 16C0 20.2435 1.79107 24.3131 4.97919 27.3137C8.1673 30.3143 12.4913 32 17 32ZM16.0544 10.336C15.7343 10.135 15.3624 10.0196 14.9781 10.0021C14.5938 9.98449 14.2117 10.0654 13.8725 10.2363C13.5333 10.4071 13.2497 10.6614 13.052 10.972C12.8543 11.2826 12.7499 11.6379 12.75 12V20C12.7499 20.3621 12.8543 20.7174 13.052 21.028C13.2497 21.3386 13.5333 21.5929 13.8725 21.7637C14.2117 21.9346 14.5938 22.0155 14.9781 21.9979C15.3624 21.9804 15.7343 21.865 16.0544 21.664L22.4294 17.664C22.7204 17.4814 22.959 17.2339 23.1241 16.9436C23.2891 16.6534 23.3755 16.3292 23.3755 16C23.3755 15.6708 23.2891 15.3466 23.1241 15.0564C22.959 14.7661 22.7204 14.5186 22.4294 14.336L16.0544 10.336Z" fill="#092f3a"/>
+                </svg>
+              </button>
+        </div>
+    <script src="javascript/music.js"></script>        
+    <script src="javascript/script.js"></script>
 </body>
-<script src="javascript/script.js"></script>
+
 </html>
